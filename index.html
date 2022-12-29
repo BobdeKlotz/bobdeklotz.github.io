@@ -1,1 +1,49 @@
-Hello World
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Algorithmic seating god</title>
+    <meta name="description" content="An artifical decision maker for your seating">
+    <meta name="author" content="Bob de Klotz">
+
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <script src="https://randojs.com/2.0.0.js"></script>
+    <script>
+        function showRandomNumber(){
+            document.getElementById("myNumber").innerHTML = rando(0, 260);
+        }
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+            font-size: 3rem;
+        }
+        #main {
+            height: 100%;
+            width: 100%;
+            display: table;
+        }
+        #wrapper {
+            display: table-cell;
+            height: 100%;
+            text-align: center;
+        }
+        #myNumber {
+            margin: 100px auto;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body onload="showRandomNumber();">
+    <div id="main">
+        <div id="wrapper">
+            <div id="myNumber"></div>
+            <button id="myButton" onclick="showRandomNumber()">New Number</button>
+        </div>
+    </div>
+</body>
+</html>
