@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
     <script>
         function initState(){
-            window.slots = [0, 1, 1, 1];
+            window.slots = [0, 1, 1, 1, 1];
             showRandomNumber();
         }
         function showRandomNumber(){
@@ -20,7 +20,7 @@
             myNumber.innerHTML = "";
             myNumber.classList.add("animate-pulse");
             window.setTimeout(() => {
-                myNumber.innerHTML = window.slots[Math.floor(Math.random() * 3)];
+                myNumber.innerHTML = window.slots[Math.floor(Math.random() * 4)];
                 myNumber.classList.remove("animate-pulse");
             }, 1000);
             
